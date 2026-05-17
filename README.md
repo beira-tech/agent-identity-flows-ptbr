@@ -2,7 +2,7 @@
 
 > Implementações mínimas e rodáveis dos três fluxos OAuth para identidade de agentes em ambientes corporativos: Token Exchange para leitura, Client Credentials com Human-in-the-Loop, e Token Exchange para operação regulada com delegação.
 
-Companheiro do ensaio **[Por que agentes nunca devem impersonar usuários](https://beira.tech/notas/2026-06-agent-identity)** — leitura recomendada antes de explorar o código.
+Companheiro dos posts sobre IA do **[Ricardo Coelho de Sousa](https://www.linkedin.com/in/rcsousa1/)** — leitura recomendada antes de explorar o código.
 
 ## O que esse repositório é (e o que não é)
 
