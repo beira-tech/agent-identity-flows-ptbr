@@ -1,0 +1,33 @@
+services:
+  sts:
+    build:
+      context: .
+      dockerfile: Dockerfile.sts
+    ports:
+      - "${STS_PORT:-8001}:8001"
+
+  downstream:
+    build:
+      context: .
+      dockerfile: Dockerfile.downstream
+    ports:
+      - "${DOWNSTREAM_PORT:-8002}:8002"
+    volumes:
+      - audit-data:/data
+    environment:
+      - AUDIT_LOG_PATH=/data/audit_log.jsonl
+
+  ui:
+    build:
+      context: ./ui
+      args:
+        VITE_STS_URL: "http://localhost:${STS_PORT:-8001}"
+        VITE_DOWNSTREAM_URL: "http://localhost:${DOWNSTREAM_PORT:-8002}"
+    ports:
+      - "${UI_PORT:-3000}:80"
+    depends_on:
+      - sts
+      - downstream
+
+volumes:
+  audit-data:

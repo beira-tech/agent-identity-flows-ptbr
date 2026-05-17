@@ -1,0 +1,26 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+audit_log.jsonl
+.env
+
+# UI
+ui/node_modules/
+ui/dist/
+
+# Arquivos raiz duplicados — usa /nome.py para não excluir os que estão em sts/, downstream/, agent/
+/main.py
+/jwt_utils.py
+/registry.py
+/token_exchange.py
+/client_credentials.py
+/audit_log.py
+/flow_1_leitura.py
+/flow_2_hil.py
+/flow_3_delegacao.py
+
+# Diretórios internos
+.claude/
+mnt/
