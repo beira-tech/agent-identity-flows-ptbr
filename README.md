@@ -188,8 +188,6 @@ Discussão estendida em [LinkedIn](https://linkedin.com/in/rcsousa1) ou via issu
 
 ## Licença
 
-MIT. Veja [LICENSE](./LICENSE).
+MIT.  [LICENSE](./LICENSE).
 
----
 
-*Ricardo Sousa — [beira.tech](https://beira.tech)*
